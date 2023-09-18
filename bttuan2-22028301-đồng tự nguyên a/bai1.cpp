@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 int main() {
-    // Write C++ code here
     int n;
     cin >> n;
     int a[100];
