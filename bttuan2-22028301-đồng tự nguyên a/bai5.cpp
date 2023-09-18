@@ -24,8 +24,6 @@ int main() {
             }
         }
     }
-
-    // Print the resulting stack
     stack<int> reversedStack;
     while (!myStack.empty()) {
         reversedStack.push(myStack.top());
