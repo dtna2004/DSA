@@ -43,11 +43,11 @@ int count_triplets(DoublyLinkedList& dllist) {
     Node* current = dllist.head;
 
     if (dllist.head == nullptr) {
-        return 0;  // Danh sách rỗng
+        return 0;  
     }
 
     if (dllist.head->next == nullptr) {
-        return 0;  // Chỉ có một phần tử, không có ba số liền nhau
+        return 0;  
     }
 
     while (current->next != nullptr) {
