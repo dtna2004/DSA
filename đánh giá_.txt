@@ -1,0 +1,31 @@
+1.Hàm insert(int father, int data):
+Độ phức tạp trường hợp tốt nhất: O(1)
+Độ phức tạp trường hợp xấu nhất: O(N) trong trường hợp cây trở thành danh sách liên kết tuyến tính, với N là số lượng nút trong cây.
+
+2.Hàm remove(int data):
+Độ phức tạp trường hợp tốt nhất: O(1) nếu nút cần xoá là nút gốc và không có con.
+Độ phức tạp trường hợp xấu nhất: O(N) trong trường hợp cây trở thành danh sách liên kết tuyến tính và nút cần xoá ở cuối danh sách, với N là số lượng nút trong cây.
+
+3.Hàm findMax():
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút trong cây, vì phải duyệt qua tất cả các nút để tìm nút có giá trị lớn nhất.
+
+4.Hàm findMaxChild(Node node):
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút con của nút được truyền vào. Trong trường hợp tốt nhất, nút có nhiều con nhất và được trả về. Trong trường hợp xấu nhất, nút chỉ có một con hoặc không có con nào, và nút gốc được trả về.
+
+5.Hàm depth(int data):
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút trong cây, vì phải duyệt qua tất cả các nút để tìm nút có giá trị cần tính độ sâu.
+
+6.Hàm isBinaryTree(Node node):
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút trong cây, vì phải duyệt qua tất cả các nút để kiểm tra xem cây có phải là cây nhị phân không.
+
+7.Hàm isBinarySearchTree(Node node, int min, int max):
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút trong cây, vì phải duyệt qua tất cả các nút để kiểm tra xem cây có phải là cây tìm kiếm nhị phân không.
+
+8.Hàm isMaxHeapTree(Node node):
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút trong cây, vì phải duyệt qua tất cả các nút để kiểm tra xem cây có phải là cây max-heap không.
+
+9.Hàm numOfLeaves(Node node):
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút trong cây, vì phải đếm số lượng lá bằng cách duyệt qua tất cả các nút.
+
+10.Hàm numOfNodes(Node node):
+Độ phức tạp trường hợp tốt nhất và xấu nhất: O(N) với N là số lượng nút trong cây, vì phải đếm số lượng nút bằng cách duyệt qua tất cả các nút
