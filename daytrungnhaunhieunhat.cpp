@@ -7,10 +7,8 @@ int longestCommonSubsequence(vector<int>& a, vector<int>& b) {
     int m = a.size();
     int n = b.size();
 
-    // Tạo một bảng 2D để lưu độ dài LCS tại mỗi vị trí (i, j).
     vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));
 
-    // Tính độ dài LCS bằng cách duyệt qua từng phần tử của cả hai dãy.
     for (int i = 1; i <= m; i++) {
         for (int j = 1; j <= n; j++) {
             if (a[i - 1] == b[j - 1]) {
@@ -21,7 +19,7 @@ int longestCommonSubsequence(vector<int>& a, vector<int>& b) {
         }
     }
 
-    return dp[m][n]; // Độ dài LCS tại vị trí cuối cùng của mảng dp chính là kết quả.
+    return dp[m][n]; 
 }
 
 int main() {
